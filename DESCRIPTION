@@ -1,0 +1,24 @@
+Package: fastdivrate
+Title: Fast Estimation of Diversification Rates
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jonathan",
+           family = "Chang",
+           role = c("aut", "cre"),
+           email = "me@jonathanchang.org",
+           comment = c(ORCID = "0000-0002-3811-1254"))
+Description: Rapidly estimate diversification rates on large phylogenies
+    with this package. Supports a variety of approximations of tip-
+    specific diversification rates.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    ape,
+    Rcpp
+LinkingTo: 
+    Rcpp
+URL: https://github.com/jonchang/fastdivrate
+BugReports: https://github.com/jonchang/fastdivrate/issues

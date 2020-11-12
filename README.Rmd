@@ -1,0 +1,54 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# fastdivrate
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of fastdivrate is to quickly compute tip-specific diversification rates using a variety of statistics.
+
+## Installation
+
+Install the development version with:
+
+``` r
+if (!requireNamespace("remotes", quietly = TRUE))
+    install.packages("remotes")
+
+remotes::install_github("jonchang/fastdivrate")
+```
+
+Once this is accepted on CRAN, you could install the released version of fastdivrate from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("fastdivrate")
+```
+
+(Note: Not on CRAN just yet.)
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(fastdivrate)
+library(ape)
+# Simulate a big tree
+tree <- rcoal(10000)
+# Calculate its diversification rates, quickly
+rates <- DR_statistic_C(tree)
+stem(rates)
+```
