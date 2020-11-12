@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # fastdivrate
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/jonchang/fastdivrate/workflows/R-CMD-check/badge.svg)](https://github.com/jonchang/fastdivrate/actions)
 <!-- badges: end -->
 
 The goal of fastdivrate is to quickly compute tip-specific diversification rates using a variety of statistics.
